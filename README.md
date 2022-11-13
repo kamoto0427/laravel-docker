@@ -63,19 +63,19 @@ laravel-graphql % docker-compose up -d
 
 ⑤コンテナが立ち上がったか確認
 ※docker-desktopのアプリからも確認できます。
-laravel-graphql % docker ps
-CONTAINER ID   IMAGE                     STATUS            NAMES
-ed53d7657c9c   phpmyadmin/phpmyadmin      Up 2 seconds     laravel_graphql_phpmyadmin
-e097a04f31fc   laravel_graphql_php         Up 4 seconds     laravel_graphql_php
-05d9962d3e35   laravel_graphql_mysql       Up 4 seconds     laravel_graphql_mysql
+!(images/docker_ps実行.png)
 
 ⑥phpコンテナに入る
-下記のdocker基本的な操作に記載
+下記のdocker基本的な操作のphpコンテナに入るを参照。
+または、vscodeでdockerの拡張機能を入れている場合は、もっと簡単にコンテナに入れます。
+※vscodeの拡張機能でdockerと検索し、インストールする。
+!(images/vscodeからコンテナに入る.png)
 
-⑦laravel8系をインストール
-/var/www# composer create-project --prefer-dist "laravel/laravel=8.*" .
+⑦laravel9系をインストール
+phpコンテナに入ったあと、以下を実行する。
+/var/www# composer create-project --prefer-dist "laravel/laravel=9.*" .
 
-"laravel/laravel=8.*" [ファイル名]ですが、"laravel/laravel=8.*" .と.を指定することでsrcのファイルが新たに作成され、そこにlaravelのソースが入ってきてくれます。  (docker-compose.ymlで.srcとvar/wwwを対応させているため。)
+"laravel/laravel=9.*" [ファイル名]ですが、"laravel/laravel=9.*" .と.を指定することでsrcのファイルが新たに作成され、そこにlaravelのソースが入ってきてくれます。  (docker-compose.ymlで.srcとvar/wwwを対応させているため。)
 > @php artisan vendor:publish --tag=laravel-assets --ansi --force
 No publishable resources for tag [laravel-assets].
 Publishing complete.
@@ -135,6 +135,12 @@ laravel-docker % docker ps
 CONTAINER ID IMAGE  COMMAND CREATED  STATUS PORTS  NAMESが確認できる
 
 % docker exec -it <CONTAINER IDまたはNAMES> bash
+例：
+コンテナIDで入る場合
+% docker exec -it 5443f829697c bash
+
+NAMESで入る場合
+% docker exec -it laravel_graphql_php bash
 
 例)コンテナ名の場合
 % docker exec -it laravel-docker_php_1 bash
