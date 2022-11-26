@@ -85,13 +85,13 @@ laravel-graphql % docker-compose up -d --build
 
 ### ⑤コンテナが立ち上がったか確認<br>
 ※docker-desktopのアプリからも確認できます。<br>
-!(https://github.com/kamoto0427/laravel-docker/blob/main/images/docker_ps%E5%AE%9F%E8%A1%8C.png)
+<img width="475" alt="スクリーンショット 2022-11-13 21 23 03" src="https://user-images.githubusercontent.com/64408070/204076923-50615402-71db-489d-8b78-306cf8e6bfc7.png">
 
 ### ⑥phpコンテナに入る<br>
 下記のdocker基本的な操作のphpコンテナに入るを参照。<br>
 または、vscodeでdockerの拡張機能を入れている場合は、もっと簡単にコンテナに入れます。<br>
 ※vscodeの拡張機能でdockerと検索し、インストールする。<br>
-!(https://github.com/kamoto0427/laravel-docker/blob/main/images/vscode%E3%81%8B%E3%82%89%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%AB%E5%85%A5%E3%82%8B.png)
+<img width="333" alt="スクリーンショット 2022-11-26 16 14 29" src="https://user-images.githubusercontent.com/64408070/204077034-906f4974-4c80-4bf2-b63b-40a884ed5d14.png">
 
 ### ⑦laravel9系をインストール<br>
 phpコンテナに入ったあと、以下を実行する。<br>
