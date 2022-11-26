@@ -9,10 +9,12 @@ Laravel9
 dockerのインストール、docker-desktopアプリをインストールしておきましょう。
 
 ## 導入手順
-①git cloneする
-git cloneしたいディレクトリに移動
-例：projects配下に作成したい場合
+①git cloneする<br>
+git cloneしたいディレクトリに移動<br>
+例：projects配下に作成したい場合<br>
+```
 projects % git clone https://github.com/kamoto0427/laravel-docker.git
+```
 
 ↓
 projects % ls
