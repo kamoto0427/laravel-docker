@@ -20,6 +20,7 @@ projects % git clone https://github.com/kamoto0427/laravel-docker.git
 ```
 projects % ls
 ```
+
 を実行し、laravel-dockerのディレクトリが作成されていることを確認する。
 
 ### ②ファイル名の変更する場合<br>
