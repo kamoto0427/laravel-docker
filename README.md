@@ -29,7 +29,7 @@ mv 変更前のファイル名 変更後のファイル名でできます。<br>
 ```
 projects % mv laravel-docker laravel-graphql
 ```
-<br>
+
 ↓<br>
 ```
 projects % ls
