@@ -3,6 +3,7 @@ PHP 8.0.15
 Apache 2.4.52
 mysql 8.0.20
 Composer 2.2.6
+Laravel9
 
 ## 前提
 dockerのインストール、docker-desktopアプリをインストールしておきましょう。
